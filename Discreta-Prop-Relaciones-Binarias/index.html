@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+
+    </head>
+    <body>
+       <div class="grid-container">
+        <div class="rowStart borderbox grid-item">
+            <div class="datastart">
+                <label for="Filas"> Ingrese la cantidad de filas y columnas: </label>
+                <input type="text" id="longM">
+                <button id="calcular"> Calcular </button>
+            </div>
+        </div>
+        <br><hr>
+        <div class="rowCenterLeft borderbox grid-item">
+            <table id="matrizBooleana">
+
+            </table>
+        </div>
+        <div class="rowCenterRight borderbox grid-item">
+            <table id="arraydata">
+                <thead>
+                    <tr>
+                        <td class ="propiedades">Propiedades:</td>
+                        <td class ="propiedades">Valor de verdad:</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class ="propiedades">Reflexiva</td>
+                        <td class ="propiedades" id="esReflexiva"></td>
+                    </tr>
+                    <tr>
+                        <td class ="propiedades">Arreflexiva</td>
+                        <td class ="propiedades" id="esArreflexiva"></td>
+                    </tr>
+                    <tr>
+                        <td class ="propiedades">Simetrica</td>
+                        <td class ="propiedades" id="esSimetrica"></td>
+                    </tr>
+                    <tr>
+                        <td class ="propiedades">Asimetrica</td>
+                        <td class ="propiedades" id="esAsimetrica"></td>
+                    </tr>
+                    <tr>
+                        <td class ="propiedades">Antisimetrica</td>
+                        <td class ="propiedades" id="esAntisimetrica"></td>
+                    </tr>
+                    <tr>
+                        <td class ="propiedades">Transitiva</td>
+                        <td class ="propiedades" id="esTransitiva"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="rowFooter borderbox"> 
+        </div>
+        </div>
+        <script src="jquery-3.1.1.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
